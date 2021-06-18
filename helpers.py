@@ -135,3 +135,5 @@ class ReplayBuffer:
         self.all_td_errors[indeces] = np.ravel(np.absolute(td_errors))
         # find the max error from the replay buffer that will be used as a default value for new transactions
         self.max_td_error = np.max(self.all_td_errors)
+
+

@@ -1,7 +1,9 @@
 import numpy as np
 from sklearn.base import clone
 import collections
-from sklearn.ensemble import RandomForestClassifier
+#from sklearn.ensemble import RandomForestClassifier
+
+import tensorflow as tf
 
 class LalEnv(object):    
     """The base class for LAL environment.
@@ -36,6 +38,7 @@ class LalEnv(object):
         """Inits environment with attributes: dataset, model, quality function and other attributes."""
         self.dataset = dataset
         self.model = model
+
         self.quality_method = quality_method
         # Compute the number of classes as a number of unique labels in train dataset
         self.n_classes = np.size(np.unique(self.dataset.train_labels))
@@ -52,7 +55,7 @@ class LalEnv(object):
         self.model_rf = RandomForestClassifier(50, oob_score=True, n_jobs=1)
         self.model_rf.fit(known_data, known_labels)
     
-    def reset(self, n_start=2):
+    def reset(self, n_start=10):
         """Resets the environment.
         
         1) The dataset is regenerated accoudring to its method regenerate.
@@ -105,16 +108,28 @@ class LalEnv(object):
         known_labels = self.dataset.train_labels[self.indeces_known]
         unknown_data = self.dataset.train_data[self.indeces_unknown,:]
         unknown_labels = self.dataset.train_labels[self.indeces_unknown]
+        
+        #print("known: ", len(self.indeces_known))
+        #print("unknown: ", len(self.indeces_unknown))
+        
         # Train a model using data corresponding to indeces_known
         known_labels = np.ravel(known_labels)
-        self.model.fit(known_data, known_labels)
+
+
+        self.model.fit(known_data, known_labels, epochs=5, verbose=False)
+    
+        #self.model.fit(known_data, known_labels)
         # Compute the quality score
-        test_prediction = self.model.predict(self.dataset.test_data)
+        #test_prediction = self.model.predict(self.dataset.test_data)
+        output = self.model.predict(self.dataset.test_data)
+        test_prediction = output.argmax(axis=1)
         new_score = self.quality_method(self.dataset.test_labels, test_prediction)
         self.episode_qualities.append(new_score)
         # Get the features categorizing the state        
         classifier_state, next_action_state = self._get_state() 
-        self.n_actions = np.size(self.indeces_unknown)    
+        self.n_actions = np.size(self.indeces_unknown)
+        #print("#### Env created ####", "# known:", np.size(self.indeces_known), "|", 
+        #      "# unknown:", np.size(self.indeces_unknown))
         return classifier_state, next_action_state
         
     def step(self, action):
@@ -147,14 +162,16 @@ class LalEnv(object):
         known_data = self.dataset.train_data[self.indeces_known,:]
         known_labels = self.dataset.train_labels[self.indeces_known]
         known_labels = np.ravel(known_labels)
-        self.model.fit(known_data, known_labels)
+        self.model.fit(known_data, known_labels, epochs=5, verbose=False)
         # Get a new state 
         classifier_state, next_action_state = self._get_state() 
         # Update the number of available actions
         self.n_actions = np.size(self.indeces_unknown)
         # Compute the quality of the current classifier
-        test_prediction = self.model.predict(self.dataset.test_data)
+        output = self.model.predict(self.dataset.test_data, verbose=False)
+        test_prediction = output.argmax(axis=1)
         new_score = self.quality_method(self.dataset.test_labels, test_prediction)
+
         self.episode_qualities.append(new_score)
         # Compute the reward
         reward = self._compute_reward()
@@ -181,7 +198,8 @@ class LalEnv(object):
                                where each column corresponds to the vector characterizing each possible action.
         """
         # COMPUTE CLASSIFIER_STATE
-        predictions = self.model.predict_proba(self.dataset.state_data)[:,0]
+        output = self.model.predict(self.dataset.state_data, verbose=False)
+        predictions = output.argmax(axis=1)
         predictions = np.array(predictions)
         idx = np.argsort(predictions)
         # the state representation is the *sorted* list of scores 
@@ -189,13 +207,22 @@ class LalEnv(object):
         
         # COMPUTE ACTION_STATE
         unknown_data = self.dataset.train_data[self.indeces_unknown,:]
+        output = self.model.predict(unknown_data, verbose=False)
+        a1 = output.max(axis=1)
+        #print(output.shape)
+        #print(np.log(output).shape)
+        entropy = output * np.log(output)
+        a2 = entropy.sum(axis=1)
+
         # prediction (score) of classifier on each unlabelled sample
-        a1 = self.model.predict_proba(unknown_data)[:,0]
+        #a1 = self.model.predict_proba(unknown_data)[:,0]
         # average distance to every unlabelled datapoint
-        a2 = np.mean(self.dataset.distances[self.indeces_unknown,:][:,self.indeces_unknown],axis=0)
+        #a2 = np.mean(self.dataset.distances[self.indeces_unknown,:][:,self.indeces_unknown],axis=0)
         # average distance to every labelled datapoint
-        a3 = np.mean(self.dataset.distances[self.indeces_known,:][:,self.indeces_unknown],axis=0)
-        next_action_state = np.concatenate(([a1], [a2], [a3]), axis=0)
+        #a3 = np.mean(self.dataset.distances[self.indeces_known,:][:,self.indeces_unknown],axis=0)
+        
+        next_action_state = np.concatenate(([a1], [a2]), axis=0)
+        #print(next_action_state.shape)
         return classifier_state, next_action_state
     
     def _compute_reward(self):
@@ -309,15 +336,25 @@ class LalEnvTargetAccuracy(LalEnv):
         on the full potential training data and sets the target_quality 
         as tolerance_level*max_qualtity.
         """
-        best_model = clone(self.model)
+
+        #print("set target quality")
+        best_model = tf.keras.models.clone_model(self.model)
+        best_model.compile(optimizer='adam',
+                           loss='sparse_categorical_crossentropy',
+                           metrics=['accuracy'])
+        #print("best model compiled")
         # train and avaluate the model on the full size of potential dataset
-        best_model.fit(self.dataset.train_data, np.ravel(self.dataset.train_labels))
-        test_prediction = best_model.predict(self.dataset.test_data)   
+        #print("best model fitting")
+        best_model.fit(self.dataset.train_data, self.dataset.train_labels, verbose=False)
+        #print("fitting done")
+        test_output = best_model.predict(self.dataset.test_data, verbose=False)
+        #print("prediction done")
+        test_prediction = test_output.argmax(axis=1)
         max_quality = self.quality_method(self.dataset.test_labels, test_prediction)
         # the target_quality after which the episode stops is a proportion of the max quality
         self.target_quality = self.tolerance_level*max_quality
         
-    def reset(self, n_start=2):
+    def reset(self, n_start=10):
         """Resets the environment.
         
         First, do, what is done for the parent environment and then:
@@ -361,6 +398,7 @@ class LalEnvTargetAccuracy(LalEnv):
         # by default the episode will terminate when all samples are labelled
         done = LalEnv._compute_is_terminal(self)
         # it also terminates when a quality reaches a predefined level
+
         if new_score >= self.target_quality:
             done = True
         return done

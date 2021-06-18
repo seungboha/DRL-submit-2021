@@ -1,0 +1,1072 @@
+### Collecting eposodes
+## Updating replay buffer done
+Training iter:0
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+
+Test 0 : -1, 
+Test 1 : -1, 
+Test 2 : -1, 
+Test 3 : -1, 
+Test 4 : -1, 
+Test 5 : -1, 
+Test 6 : -1, 
+Test 7 : -1, 
+Test 8 : -1, 
+Test 9 : -1, 
+Test 10 : -1, 
+Test 11 : -1, 
+Test 12 : -1, 
+Test 13 : -1, 
+Test 14 : -1, 
+Test 15 : -1, 
+Test 16 : -1, 
+Test 17 : -1, 
+Test 18 : -1, 
+Test 19 : -1, 
+Test 20 : -1, 
+Test 21 : -1, 
+Test 22 : -1, 
+Test 23 : -1, 
+Test 24 : -1, 
+Test 25 : -1, 
+Test 26 : -1, 
+Test 27 : -1, 
+Test 28 : -1, 
+Test 29 : -1, 
+Test 30 : -1, 
+Test 31 : -1, 
+Test 32 : -1, 
+Test 33 : -1, 
+Test 34 : -1, 
+Test 35 : -1, 
+Test 36 : -1, 
+Test 37 : -1, 
+Test 38 : -1, 
+Test 39 : -1, 
+Test 40 : -1, 
+Test 41 : -1, 
+Test 42 : -1, 
+Test 43 : -1, 
+Test 44 : -1, 
+Test 45 : -1, 
+Test 46 : -1, 
+Test 47 : -1, 
+Test 48 : -1, 
+Test 49 : -1, 
+Test 50 : -1, 
+Test 51 : -1, 
+Test 52 : -1, 
+Test 53 : -1, 
+Test 54 : -1, 
+Test 55 : -1, 
+Test 56 : -1, 
+Test 57 : -1, 
+Test 58 : -1, 
+Test 59 : -1, 
+Test 60 : -1, 
+Test 61 : -1, 
+Test 62 : -1, 
+Test 63 : -1, 
+Test 64 : -1, 
+Test 65 : -1, 
+Test 66 : -1, 
+Test 67 : -1, 
+Test 68 : -1, 
+Test 69 : -1, 
+Test 70 : -1, 
+Test 71 : -1, 
+Test 72 : -1, 
+Test 73 : -1, 
+Test 74 : -1, 
+Test 75 : -1, 
+Test 76 : -1, 
+Test 77 : -1, 
+Test 78 : -1, 
+Test 79 : -1, 
+Test 80 : -1, 
+Test 81 : -1, 
+Test 82 : -1, 
+Test 83 : -1, 
+Test 84 : -1, 
+Test 85 : -1, 
+Test 86 : -1, 
+Test 87 : -1, 
+Test 88 : -1, 
+Test 89 : -1, 
+Test 90 : -1, 
+Test 91 : -1, 
+Test 92 : -1, 
+Test 93 : -1, 
+Test 94 : -1, 
+Test 95 : -1, 
+Test 96 : -1, 
+Test 97 : -1, 
+Test 98 : -1, 
+Test 99 : -1, 
+Test 100 : -1, 
+Test 101 : -1, 
+Test 102 : -1, 
+Test 103 : -1, 
+Test 104 : -1, 
+Test 105 : -1, 
+Test 106 : -1, 
+Test 107 : -1, 
+Test 108 : -1, 
+Test 109 : -1, 
+Test 110 : -1, 
+Test 111 : -1, 
+Test 112 : -1, 
+Test 113 : -1, 
+Test 114 : -1, 
+Test 115 : -1, 
+Test 116 : -1, 
+Test 117 : -1, 
+Test 118 : -1, 
+Test 119 : -1, 
+Test 120 : -1, 
+Test 121 : -1, 
+Test 122 : -1, 
+Test 123 : -1, 
+Test 124 : -1, 
+Test 125 : -1, 
+Test 126 : -1, 
+Test 127 : -1, 
+Test 128 : -1, 
+Test 129 : -1, 
+Test 130 : -1, 
+Test 131 : -1, 
+Test 132 : -1, 
+Test 133 : -1, 
+Test 134 : -1, 
+Test 135 : -1, 
+Test 136 : -1, 
+Test 137 : -1, 
+Test 138 : -1, 
+Test 139 : -1, 
+Test 140 : -1, 
+Test 141 : -1, 
+Test 142 : -1, 
+Test 143 : -1, 
+Test 144 : -1, 
+Test 145 : -1, 
+Test 146 : -1, 
+Test 147 : -1, 
+Test 148 : -1, 
+Test 149 : -1, 
+Test 150 : -1, 
+Test 151 : -1, 
+Test 152 : -1, 
+Test 153 : -1, 
+Test 154 : -1, 
+Test 155 : -1, 
+Test 156 : -1, 
+Test 157 : -1, 
+Test 158 : -1, 
+Test 159 : -1, 
+Test 160 : -1, 
+Test 161 : -1, 
+Test 162 : -1, 
+Test 163 : -1, 
+Test 164 : -1, 
+Test 165 : -1, 
+Test 166 : -1, 
+Test 167 : -1, 
+Test 168 : -1, 
+Test 169 : -1, 
+Test 170 : -1, 
+Test 171 : -1, 
+Test 172 : -1, 
+Test 173 : -1, 
+Test 174 : -1, 
+Test 175 : -1, 
+Test 176 : -1, 
+Test 177 : -1, 
+Test 178 : -1, 
+Test 179 : -1, 
+Test 180 : -1, 
+Test 181 : -1, 
+Test 182 : -1, 
+Test 183 : -1, 
+Test 184 : -1, 
+Test 185 : -1, 
+Test 186 : -1, 
+Test 187 : -1, 
+Test 188 : -1, 
+Test 189 : -1, 
+Test 190 : -1, 
+Test 191 : -1, 
+Test 192 : -1, 
+Test 193 : -1, 
+Test 194 : -1, 
+Test 195 : -1, 
+Test 196 : -1, 
+Test 197 : -1, 
+Test 198 : -1, 
+Test 199 : -1, 
+Test 200 : -1, 
+Test 201 : -1, 
+Test 202 : -1, 
+Test 203 : -1, 
+Test 204 : -1, 
+Test 205 : -1, 
+Test 206 : -1, 
+Test 207 : -1, 
+Test 208 : -1, 
+Test 209 : -1, 
+Test 210 : -1, 
+Test 211 : -1, 
+Test 212 : -1, 
+Test 213 : -1, 
+Test 214 : -1, 
+Test 215 : -1, 
+Test 216 : -1, 
+Test 217 : -1, 
+Test 218 : -1, 
+Test 219 : -1, 
+Test 220 : -1, 
+Test 221 : -1, 
+Test 222 : -1, 
+Test 223 : -1, 
+Test 224 : -1, 
+Test 225 : -1, 
+Test 226 : -1, 
+Test 227 : -1, 
+Test 228 : -1, 
+Test 229 : -1, 
+Test 230 : -1, 
+Test 231 : -1, 
+Test 232 : -1, 
+Test 233 : -1, 
+Test 234 : -1, 
+Test 235 : -1, 
+Test 236 : -1, 
+Test 237 : -1, 
+Test 238 : -1, 
+Test 239 : -1, 
+Test 240 : -1, 
+Test 241 : -1, 
+Test 242 : -1, 
+Test 243 : -1, 
+Test 244 : -1, 
+Test 245 : -1, 
+Test 246 : -1, 
+Test 247 : -1, 
+Test 248 : -1, 
+Test 249 : -1, 
+Test 250 : -1, 
+Test 251 : -1, 
+Test 252 : -1, 
+Test 253 : -1, 
+Test 254 : -1, 
+Test 255 : -1, 
+Test 256 : -1, 
+Test 257 : -1, 
+Test 258 : -1, 
+Test 259 : -1, 
+Test 260 : -1, 
+Test 261 : -1, 
+Test 262 : -1, 
+Test 263 : -1, 
+Test 264 : -1, 
+Test 265 : -1, 
+Test 266 : -1, 
+Test 267 : -1, 
+Test 268 : -1, 
+Test 269 : -1, 
+Test 270 : -1, 
+Test 271 : -1, 
+Test 272 : -1, 
+Test 273 : -1, 
+Test 274 : -1, 
+Test 275 : -1, 
+Test 276 : -1, 
+Test 277 : -1, 
+Test 278 : -1, 
+Test 279 : -1, 
+Test 280 : -1, 
+Test 281 : -1, 
+Test 282 : -1, 
+Test 283 : -1, 
+Test 284 : -1, 
+Test 285 : -1, 
+Test 286 : -1, 
+Test 287 : -1, 
+Test 288 : -1, 
+Test 289 : -1, 
+Test 290 : -1, 
+Test 291 : -1, 
+Test 292 : -1, 
+Test 293 : -1, 
+Test 294 : -1, 
+Test 295 : -1, 
+Test 296 : -1, 
+Test 297 : -1, 
+Test 298 : -1, 
+Test 299 : -1, 
+Test 300 : -1, 
+Test 301 : -1, 
+Test 302 : -1, 
+Test 303 : -1, 
+Test 304 : -1, 
+Test 305 : -1, 
+Test 306 : -1, 
+Test 307 : -1, 
+Test 308 : -1, 
+Test 309 : -1, 
+Test 310 : -1, 
+Test 311 : -1, 
+Test 312 : -1, 
+Test 313 : -1, 
+Test 314 : -1, 
+Test 315 : -1, 
+Test 316 : -1, 
+Test 317 : -1, 
+Test 318 : -1, 
+Test 319 : -1, 
+Test 320 : -1, 
+Test 321 : -1, 
+Test 322 : -1, 
+Test 323 : -1, 
+Test 324 : -1, 
+Test 325 : -1, 
+Test 326 : -1, 
+Test 327 : -1, 
+Test 328 : -1, 
+Test 329 : -1, 
+Test 330 : -1, 
+Test 331 : -1, 
+Test 332 : -1, 
+Test 333 : -1, 
+Test 334 : -1, 
+Test 335 : -1, 
+Test 336 : -1, 
+Test 337 : -1, 
+Test 338 : -1, 
+Test 339 : -1, 
+Test 340 : -1, 
+Test 341 : -1, 
+Test 342 : -1, 
+Test 343 : -1, 
+Test 344 : -1, 
+Test 345 : -1, 
+Test 346 : -1, 
+Test 347 : -1, 
+Test 348 : -1, 
+Test 349 : -1, 
+Test 350 : -1, 
+Test 351 : -1, 
+Test 352 : -1, 
+Test 353 : -1, 
+Test 354 : -1, 
+Test 355 : -1, 
+Test 356 : -1, 
+Test 357 : -1, 
+Test 358 : -1, 
+Test 359 : -1, 
+Test 360 : -1, 
+Test 361 : -1, 
+Test 362 : -1, 
+Test 363 : -1, 
+Test 364 : -1, 
+Test 365 : -1, 
+Test 366 : -1, 
+Test 367 : -1, 
+Test 368 : -1, 
+Test 369 : -1, 
+Test 370 : -1, 
+Test 371 : -1, 
+Test 372 : -1, 
+Test 373 : -1, 
+Test 374 : -1, 
+Test 375 : -1, 
+Test 376 : -1, 
+Test 377 : -1, 
+Test 378 : -1, 
+Test 379 : -1, 
+Test 380 : -1, 
+Test 381 : -1, 
+Test 382 : -1, 
+Test 383 : -1, 
+Test 384 : -1, 
+Test 385 : -1, 
+Test 386 : -1, 
+Test 387 : -1, 
+Test 388 : -1, 
+Test 389 : -1, 
+Test 390 : -1, 
+Test 391 : -1, 
+Test 392 : -1, 
+Test 393 : -1, 
+Test 394 : -1, 
+Test 395 : -1, 
+Test 396 : -1, 
+Test 397 : -1, 
+Test 398 : -1, 
+Test 399 : -1, 
+Test 400 : -1, 
+Test 401 : -1, 
+Test 402 : -1, 
+Test 403 : -1, 
+Test 404 : -1, 
+Test 405 : -1, 
+Test 406 : -1, 
+Test 407 : -1, 
+Test 408 : -1, 
+Test 409 : -1, 
+Test 410 : -1, 
+Test 411 : -1, 
+Test 412 : -1, 
+Test 413 : -1, 
+Test 414 : -1, 
+Test 415 : -1, 
+Test 416 : -1, 
+Test 417 : -1, 
+Test 418 : -1, 
+Test 419 : -1, 
+Test 420 : -1, 
+Test 421 : -1, 
+Test 422 : -1, 
+Test 423 : -1, 
+Test 424 : -1, 
+Test 425 : -1, 
+Test 426 : -1, 
+Test 427 : -1, 
+Test 428 : -1, 
+Test 429 : -1, 
+Test 430 : -1, 
+Test 431 : -1, 
+Test 432 : -1, 
+Test 433 : -1, 
+Test 434 : -1, 
+Test 435 : -1, 
+Test 436 : -1, 
+Test 437 : -1, 
+Test 438 : -1, 
+Test 439 : -1, 
+Test 440 : -1, 
+Test 441 : -1, 
+Test 442 : -1, 
+Test 443 : -1, 
+Test 444 : -1, 
+Test 445 : -1, 
+Test 446 : -1, 
+Test 447 : -1, 
+Test 448 : -1, 
+Test 449 : -1, 
+Test 450 : -1, 
+Test 451 : -1, 
+Test 452 : -1, 
+Test 453 : -1, 
+Test 454 : -1, 
+Test 455 : -1, 
+Test 456 : -1, 
+Test 457 : -1, 
+Test 458 : -1, 
+Test 459 : -1, 
+Test 460 : -1, 
+Test 461 : -1, 
+Test 462 : -1, 
+Test 463 : -1, 
+Test 464 : -1, 
+Test 465 : -1, 
+Test 466 : -1, 
+Test 467 : -1, 
+Test 468 : -1, 
+Test 469 : -1, 
+Test 470 : -1, 
+Test 471 : -1, 
+Test 472 : -1, 
+Test 473 : -1, 
+Test 474 : -1, 
+Test 475 : -1, 
+Test 476 : -1, 
+Test 477 : -1, 
+Test 478 : -1, 
+Test 479 : -1, 
+Test 480 : -1, 
+Test 481 : -1, 
+Test 482 : -1, 
+Test 483 : -1, 
+Test 484 : -1, 
+Test 485 : -1, 
+Test 486 : -1, 
+Test 487 : -1, 
+Test 488 : -1, 
+Test 489 : -1, 
+Test 490 : -1, 
+Test 491 : -1, 
+Test 492 : -1, 
+Test 493 : -1, 
+Test 494 : -1, 
+Test 495 : -1, 
+Test 496 : -1, 
+Test 497 : -1, 
+Test 498 : -1, 
+Test 499 : -1, Training iter:1
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:2
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:3
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:4
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:5
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:6
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:7
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:8
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:9
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:10
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:11
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:12
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:13
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:14
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:15
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:16
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:17
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:18
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:19
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:20
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:21
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:22
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:23
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:24
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:25
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:26
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:27
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1
+
+Train 5 : -1
+
+Train 6 : -1
+
+Train 7 : -1
+
+Train 8 : -1
+
+Train 9 : -1
+Training iter:28
+Train 0 : -1
+
+Train 1 : -1
+
+Train 2 : -1
+
+Train 3 : -1
+
+Train 4 : -1

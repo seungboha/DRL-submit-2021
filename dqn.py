@@ -36,7 +36,7 @@ class DQN:
                batch_size=32,
                target_copy_factor=0.001,
                bias_average=0,
-               action_length=3,
+               action_length=2,
               ):
         """Inits the DQN object.
         
@@ -124,6 +124,7 @@ class DQN:
             self._initialized = True
     
     def _check_initialized(self):
+        # print("check init")
         """This functions checks is tf variables are initialised.
         
         If variables are initializes, it does nothing, 
@@ -135,6 +136,7 @@ class DQN:
             self._initialized = True
     
     def get_action(self, classifier_state, action_state, n_tensorboard=1000000):
+        # print("get action")
         """Get the best action in a state.
         
         This function returns the best action according to 
@@ -176,6 +178,8 @@ class DQN:
         return max_action
          
     def train(self, minibatch, n_tensorboard=10000):
+        #print("train")
+
         """Train a q-function estimator on a minibatch.
         
         Train estimator on minibatch, partially copy 
@@ -204,7 +208,7 @@ class DQN:
         # for every transaction in minibatch
         for next_classifier_state in minibatch.next_classifier_state:
             # Predict q-value function value for all available actions
-            n_next_actions = np.shape(minibatch.next_action_state[i])[1]
+            n_next_actions = np.shape(minibatch.next_action_state[i])[-1]
             next_classifier_state = np.repeat([next_classifier_state], n_next_actions, axis=0)
             # Use target_estimator
             target_predictions = self.session.run(
