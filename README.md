@@ -1,11 +1,11 @@
 # Active Learning by RL
-Use build_agent.py to run the example I made.
+Run build_agent.py to run the example I made.
 This is the step to train the agent.
+Unfortunately, I couldn't test the AL agent since trainig took a lots of time. 
 
 Requirement : 
 
     - numpy
-
     - sklearn
     - tqdm
     - tensorflow == 1.x
@@ -13,6 +13,7 @@ Requirement :
     - pickle
 
 Environment :
+
     - anaconda env
     - linux 
 
