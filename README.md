@@ -3,7 +3,9 @@ Use build_agent.py to run the example I made.
 This is the step to train the agent.
 
 Requirement : 
+
     - numpy
+
     - sklearn
     - tqdm
     - tensorflow == 1.x
